@@ -1,5 +1,5 @@
 const slidesText = {
-  1: "Semoga aku berhasil jadi orang pertama yang ucapin ulang tahun, yang terpenting aku masih nemanin ulang tahun kali ini sama sayang.",
+  1: "Semoga aku jadi orang pertama yang ngucapin selamat ulang tahun. Tapi yang paling bikin aku bahagia, aku masih bisa nemenin kamu di hari spesial ini, sayang.",
   3: `Semoga di umur sayang sekarang semesta lebih berpihak, semoga bisa mendapatkan hal yang selama ini diperjuangkan.\n\nSemoga senantiasa diberi kebahagiaan.\n\nI love you on your birthday, and everyday, now and forever.`,
   4: `Aku mau ucapin banyak-banyak terima kasih buat selama ini. Terima kasih udah jalan sejauh ini, nerima kurang lebihnya aku, atas semua sabar dan effort sayang.\n\nMaaf aku belum bisa jadi yang paling ngerti sayang, belum bisa jadi cowok yang selalu bisa jaga sayang sepenuhnya.\n\nTapi aku beneran beruntung banget punya sayang. Jangan bosen ya, jangan jauh. Tetap sama aku, karena aku udah cukup berantakan kalau tanpa sayang. 💌`,
 };
