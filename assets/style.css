@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    overflow-x: hidden;
+    background-color: #111;
+    color: white;
+  }
+  
+  #sliderContainer {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .slide {
+    scroll-snap-align: start;
+    flex: 0 0 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: pink;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .gift-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .gift {
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .gift:hover {
+    transform: scale(1.2);
+  }
+  
+  .longtext {
+    max-width: 600px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+  
+  .birthday-final img {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+  
+  .number25 {
+    font-size: 60px;
+    color: #ffccff;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .heart-button {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: beat 1s infinite;
+  }
+  
+  .heart-button span {
+    font-size: 30px;
+    color: red;
+  }
+  
+  @keyframes beat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .btn-lanjut {
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 110, 196, 0.5);
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  
+  .btn-lanjut:hover {
+    background: linear-gradient(45deg, #7873f5, #ff6ec4);
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/musik.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+  
+
+  <div id="sliderContainer">
+    <!-- Slide 0 -->
+    <div class="slide fade-in" style="background-color:#000;" id="introSlide">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div onclick="goToFirstSlide()" class="heart-button">
+          <span>❤️</span>
+        </div>
+        <p style="margin-top: 20px;">Pencet Love nya</p>
+      </div>
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="slide" id="slide1" style="background: url('assets/background.jpg') no-repeat center center; background-size: cover;">
+      <h1>Selamat Ulang Tahun, Jantungku.💖</h1>
+      <p id="slide1Text"></p>
+      <button id="slide1Btn" class="btn-lanjut" onclick="nextSlide()" style="display:none;">Klik untuk Lanjut, ya</button>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background: url('assets/slide2.jpg') no-repeat center center; background-size: cover;">
+      <p>Sayang pilih kado yang mana? Tapi ini cuma game ya 😝</p>
+      <div class="gift-grid">
+        <div class="gift" onclick="chooseGift(0)">🎁</div>
+        <div class="gift" onclick="chooseGift(1)">🎁</div>
+        <div class="gift" onclick="chooseGift(2)">🎁</div>
+        <div class="gift" onclick="chooseGift(3)">🎁</div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" style="background: url('assets/Rep\ Frames.png') no-repeat center center; background-size: cover;">
+      <p class="longtext" id="slide3Text"></p>
+      <button id="slide3Btn" style="display:none;" onclick="nextSlide()">Lanjut Sayang</button>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" style="background: url('assets/Slide3.png') no-repeat center center; background-size: cover;">
+      <p class="longtext" id="slide4Text"></p>
+      <button id="slide4Btn" style="display:none;" onclick="nextSlide()">Terakhir iya, sayang</button>
+    </div>
+
+    <!-- Slide 5 -->
+<div class="slide birthday-final" style="position: relative; overflow: hidden;">
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                object-fit: cover; z-index: -1;">
+    <source src="assets/ultah.mp3" type="video/mp3">
+    Browser kamu tidak mendukung video.
+  </video>
+
+  <!-- Konten di atas video -->
+  <h2>🎂 Happy 25th Birthday! 🎉</h2>
+  <img src="assets/ultah.jpg" alt="Foto Ultah" />
+  <div class="number25">25</div>
+</div>
+
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
